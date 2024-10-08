@@ -11,16 +11,17 @@
 - title: Education
   type: time_table
   contents:
-    - title: M.S. in Geophysics
-      institution: Southern University of Science and Technol
-      year: 2022-2025
-      Advisor: 
-      description:
-        - Advisor 
-        - Description 2.
-      description:
-        - Advisor ":" <href="https://www.sustech.edu.cn/en/faculties/chenxiaofei.html">Xiaofei CHEN</a>
-        - Research Direction ":"" Ambient noise surface wave tomography
+  - title: M.S. in Geophysics
+    institution: Southern University of Science and Technology
+    year: 2022-2025
+    Advisor: 
+    descriptions:  # 修改为 unique key
+      - Advisor
+      - Description 2.
+    advisor_detail:  # 新增一个 unique key
+      - "<a href='https://www.sustech.edu.cn/en/faculties/chenxiaofei.html'>Xiaofei CHEN</a>"
+      - Research Direction: "Ambient noise surface wave tomography"
+
           
     - title: Federal teaching diploma
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland

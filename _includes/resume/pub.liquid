@@ -1,0 +1,21 @@
+<h3 class="font-weight-medium">Publications and Presentations</h3>
+<ul class="list-unstyled">
+  {% assign items = site.data.resume.pub %}
+  {% if items %}
+    {% for item in items %}
+      <li style= font-weight-light">
+        <div style="display: flex; align-items: flex-start;">
+          <span style="width: 30px; text-align: left;">[{{ item.id }}]</span>
+          <span style="margin-left: 10px;">
+            {{ item.name }} 
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" style="margin-left: 5px;">Link</a>
+            {% endif %}
+          </span>
+        </div>
+      </li>
+    {% endfor %}
+  {% else %}
+    <li>No publications or presentations available.</li>
+  {% endif %}
+</ul>

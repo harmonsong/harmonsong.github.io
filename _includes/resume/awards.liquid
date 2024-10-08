@@ -1,17 +1,28 @@
-<h3 class="font-weight-medium">Awards</h3>
-<table class="table table-borderless">
-  <tbody>
-    {% for course in site.data.resume.courses %}
-      <tr>
-        <td class="text-center" style="width: 10%;">
-          <span class="badge badge-primary" style="width: 100%; display: inline-block;">{{ course.category }}</span>
-        </td>
-        <td style="width: 90%; border-left: 2px solid #dee2e6;">
-          <span class="ml-1">
-            {{ course.courses | join: '; ' }}
-          </span>
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<h3 class="font-weight-medium">Selected Awards</h3>
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for content in data[1] %}
+    <li class="list-group-item">
+      <div class="row" style="margin-bottom: 0;"> <!-- 调整了底部间距 -->
+        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column" style="padding: 0;"> <!-- 缩小内边距 -->
+          {% if content.date %}
+            {% assign date = content.date | split: '-' | join: '.' %}
+          {% else %}
+            {% assign date = '' %}
+          {% endif %}
+          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
+        </div>
+        <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0" style="padding-left: 0px;"> <!-- 增加左侧内边距，减小中间间距 -->
+          <h6 class="title font-weight-light ml-1 ml-md-4" style="margin-bottom: 0;"> <!-- 调整了底部间距 -->
+            {{ content.title }}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; margin-bottom: 0;"> <!-- 调整了底部间距 -->
+            {{ content.awarder }}
+          </h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; margin-bottom: 0;"> <!-- 调整了底部间距 -->
+            {{ content.summary }}
+          </h6>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

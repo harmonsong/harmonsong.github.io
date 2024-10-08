@@ -86,6 +86,14 @@ layout: default
                   {% include resume/education.liquid %} 
                 {% when 'courses' %} 
                   {% include resume/courses.liquid %} 
+                {% when 'pub' %} 
+                  {% include resume/pub.liquid %} 
+                {% when 'awards' %} 
+                  {% include resume/awards.liquid %} 
+                {% when 'skills' %} 
+                  {% include resume/skills.liquid %} 
+                {% when 'references' %} 
+                  {% include resume/references.liquid %} 
               {% endcase %} 
             </div> 
           </div> 

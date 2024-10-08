@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Shuhao
-middle_name: s
+middle_name: 
 last_name: Song
 email: songsh2025@hotmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -636,14 +636,9 @@ jekyll_get_json:
     json: assets/json/resume.json # it can also be an url
 jsonresume:
   - basics
-  - work
   - education
-  - publications
-  - projects
-  - volunteer
+  - publication and Presentation
   - awards
-  - certificates
   - skills
   - languages
-  - interests
   - references

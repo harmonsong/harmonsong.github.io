@@ -2,25 +2,26 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Shuhao SONG
     - name: Date of Birth
-      value: 14th March 1879
+      value: 10th December 1999
     - name: Languages
-      value: English, German
+      value: Mandarin, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Geophysics
+      institution: Southern University of Science and Technol
+      year: 2022-2025
+      Advisor: 
       description:
-        - Description 1.
+        - Advisor 
         - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+      description:
+        - Advisor ":" <href="https://www.sustech.edu.cn/en/faculties/chenxiaofei.html">Xiaofei CHEN</a>
+        - Research Direction ":"" Ambient noise surface wave tomography
+          
     - title: Federal teaching diploma
       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
       year: 1900

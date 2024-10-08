@@ -33,18 +33,13 @@
               {% endif %}
             </tbody>
           </table>
-
-          <!-- 学校图标 -->
-          {% if content.school_logo %}
-           <img src="{{ content.school_logo }}" alt="{{ content.institution }} logo" style="width: 80px; height: auto; margin-top: 1px; vertical-align: middle;">
-          {% endif %}
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <a href="{{ content.url }}">{{ content.studyType }}</a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-            <a href="{{ content.school_url }}" target="_blank">{{ content.institution }}</a>
+            <a href="{{ content.url }}" target="_blank">{{ content.institution }}</a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
 
@@ -54,21 +49,6 @@
             <strong>Advisor:</strong> <a href="{{ content.advisor_url }}" target="_blank">{{ content.advisor }}</a>
           </h6>
           {% endif %}
-
-          <!-- 添加gpa -->
-          {% if content.gpa %}
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">
-            <strong>GPA:</strong> {{ content.gpa }}
-          </h6>
-          {% endif %}
-
-          <!-- 添加spgpa -->
-          {% if content.spgpa %}
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">
-            <strong>Specialized GPA:</strong> {{ content.spgpa }}
-          </h6>
-          {% endif %}
-
 
           <!-- 添加研究方向信息 -->
           {% if content.research_direction %}

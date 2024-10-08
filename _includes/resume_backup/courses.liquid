@@ -1,0 +1,12 @@
+<ul class="list-group list-group-flush">
+  {% for content in site.data.specialized_courses %}
+    <li class="list-group-item">
+      <h6 class="font-weight-bold">{{ content.category }}</h6>
+      <ul>
+        {% for course in content.courses %}
+          <li>{{ course }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

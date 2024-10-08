@@ -637,8 +637,8 @@ jekyll_get_json:
 jsonresume:
   - basics
   - education
-  - publication and Presentation
+  - courses
+  - publications
   - awards
   - skills
-  - languages
   - references

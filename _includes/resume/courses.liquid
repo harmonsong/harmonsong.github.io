@@ -1,12 +1,18 @@
-<ul class="list-group list-group-flush">
-  {% for content in site.data.specialized_courses %}
-    <li class="list-group-item">
-      <h6 class="font-weight-bold">{{ content.category }}</h6>
-      <ul>
-        {% for course in content.courses %}
-          <li>{{ course }}</li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
+<h3 class="font-weight-medium">Specialized Courses</h3>
+<table class="table table-borderless">
+  <tbody>
+    {% for course in site.data.resume.courses %}
+      <tr>
+        <td class="text-center" style="width: 10%;">
+          <span class="badge font-weight-bold purple" style="width: 100%; display: inline-block; font-size: 0.8rem;">{{ course.category }}</span>
+        </td>
+        <td style="width: 90%; border-left: 2px solid #dee2e6;">
+          <span class="ml-1">
+            {{ course.courses | join: '; ' }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

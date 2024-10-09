@@ -7,6 +7,13 @@ img: assets/img/research/1/cover_stacking.png
 importance: 1
 category: Methodology
 related_publications: false
+cited_keys:
+    - fps
+    - rmss
+    - pws
+    - pws
+    - fjwang
+    - leakingLi
 ---
 + This work has been presented as a highlighted poster in the AGU 2023. <a href="{{ site.baseurl }}/assets/pdf/AGU2023.pdf" target="_blank" rel="noopener noreferrer">Download Poster PDF</a>
 
@@ -52,6 +59,3 @@ Where $$\omega$$ is the angular frequency, r is the epicentral distance, k is th
 + PWS significantly improves the SNR of CCFs, while dramatically damages the dispersion spectrogram quality. (Note that the curves in the dispersion spectrograms of PWS are not overtones but artifacts)
 + RMSS has a mild influence on both CCFs and dispersion spectrogram, which can remove some strait artifacts.
 + FPS has a slight improvement on CCFs’ SNR, while enhancing the resolution and continuity of multimodal.
-
-### References
-{% bibliography %}

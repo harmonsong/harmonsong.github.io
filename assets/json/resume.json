@@ -6,7 +6,7 @@
     "email": "songsh2025@hotmail.com",
     "phone": "(86) 132-0229-7735",
     "url": "https://harmonsong.github.io/",
-    "summary": "Currently a geophysic studnet in Southern University of Science and Technology",
+    "summary": "Currently a master studnet in SUSTech, looking for a Ph.D. position. ^.^",
     "location": {
       "address": "1088 Xueyuan blvd.",
       "postalCode": "518055",
@@ -34,7 +34,7 @@
       "score": "10",
       "advisor": "Xiaofei CHEN",
       "advisor_url": "https://www.sustech.edu.cn/en/faculties/chenxiaofei.html",
-      "gpa": "3.85/4.0 (1/12)",
+      "gpa": "3.85/4.0",
       "research_direction": "Ambient noise surface wave tomography",
       "school_logo": "/assets/img/cv/sustech.jpg"
     },
@@ -61,7 +61,7 @@
       "score": "10",
       "advisor": "Xiaofei CHEN",
       "advisor_url": "https://www.sustech.edu.cn/en/faculties/chenxiaofei.html",
-      "gpa": "3.83/4.0",
+      "gpa": "3.83/4.0 (1/12)",
       "school_logo": "/assets/img/cv/sustech.jpg"
     }
   ],
@@ -177,30 +177,26 @@
       "date": "2020.9"
     }
   ],
-  "languages": [
+  "skills": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "category": "Programming Languages",
+      "details": "Matlab, Python, Java, C++"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
+      "category": "Language Proficiency",
+      "details": "Mandarin (Native speaker), English (C1, IELTS-7.5)"
+    },
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "category": "Technical Softwares",
+      "details": "SAC, GMT, Surfer, Origin"
+    },
+    {
+      "category": "Document/Presentation",
+      "details": "Office, Adobe, Overleaf"
+    },
+    {
+      "category": "Sports",
+      "details": "Badminton (Proficient), Volleyball (Conversant)"
     }
   ],
   "references": [

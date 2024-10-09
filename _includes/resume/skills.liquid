@@ -1,0 +1,10 @@
+<h3 class="font-weight-medium">Skills</h3>
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% assign skills = site.data.resume.skills %}
+  {% for skill in skills %}
+    <li class="list-group-item">
+      <h6 class="font-weight-bold">{{ skill.category }}</h6>
+      <p>{{ skill.details }}</p>
+    </li>
+  {% endfor %}
+</ul>

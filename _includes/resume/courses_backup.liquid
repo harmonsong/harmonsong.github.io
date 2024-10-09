@@ -1,19 +1,17 @@
 <h3 class="font-weight-medium">Specialized Courses</h3>
-<ul class="card-text font-weight-light list-group list-group-flush">
-  {% for course in site.data.resume.courses %}
-    <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-12 cl-sm-12 col-md-12">
-          <h6 class="title font-weight-bold ml-1">
-            <strong>{{ course.category }}</strong>
-          </h6>
-          <ul>
-            {% for course_name in course.courses %}
-              <li class="ml-1">{{ course_name }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+<table class="table table-borderless">
+  <tbody>
+    {% for course in site.data.resume.courses %}
+      <tr>
+        <td class="text-center" style="width: 10%;">
+          <span class="badge font-weight-bold purple" style="width: 100%; display: inline-block; font-size: 0.8rem;">{{ course.category }}</span>
+        </td>
+        <td style="width: 90%; border-left: 2px solid #dee2e6;">
+          <span class="ml-1">
+            {{ course.courses | join: '; ' }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

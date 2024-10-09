@@ -5,11 +5,11 @@
     {% for item in items %}
       <li style="margin-bottom: 10px;">
         <div style="display: flex; align-items: flex-start;">
-          <span style="width: 30px; text-align: left; font-size: 0.95rem; font-weight: light;">[{{ item.id }}]</span>
-          <span class="ml-1 ml-md-4" style="font-size: 0.95rem;">
+          <span style="width: 30px; text-align: left;">[{{ item.id }}]</span>
+          <span style="margin-left: 10px;">
             {{ item.name }} 
             {% if item.url %}
-              <a href="{{ item.url }}" target="_blank" style="font-size: 0.95rem; color: #007bff; text-decoration: none; margin-left: 5px;">Link</a>
+              <a href="{{ item.url }}" target="_blank" style="margin-left: 5px;">Link</a>
             {% endif %}
           </span>
         </div>

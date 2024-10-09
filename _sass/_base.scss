@@ -548,6 +548,7 @@ footer.sticky-bottom {
 
 .post-title-pro {
   font-size: 1.8rem; // 这里的值可以根据需要进行调整
+  width: 110%; // 自定义宽度，可以根据需要调整
 
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
@@ -886,7 +887,7 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
-  max-width: 1000px; // 设置你想要的最大宽度
+  max-width: 1500px; // 设置你想要的最大宽度
   margin: 0 auto; // 使其居中
 
   .post-meta {
@@ -1324,6 +1325,19 @@ ninja-keys::part(ninja-input-wrapper) {
   color: var(--global-text-color);
 }
 
-#sidebar .nav-link {
-  font-size: 0.85em; /* 或者根据需要调整为其他值 */
+#sidebar_pro .nav-link {
+  font-size: 0.7em; /* 或者根据需要调整为其他值 */
+}
+
+#sidebar_pro {
+  width: 250px; // 设置导航栏宽度，可以根据需要调整
+  margin: 0 auto; // 使导航栏居中
+  display: flex;
+  flex-direction: column; // 垂直排列
+  text-align: left; // 文字左对齐
+
+  .nav {
+      padding-left: 0; // 取消左侧的 padding
+      padding-right: 0; // 取消右侧的 padding
+  }
 }

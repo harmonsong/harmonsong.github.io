@@ -1,14 +1,14 @@
-<nav id="sidebar" class="sticky-top">
+<nav id="sidebar_pro" class="sticky-top" style="padding-top: 100px;"> <!-- Adjust the padding value as needed -->
   <ul class="nav flex-column" id="nav-list">
     <!-- This will be populated with the headings automatically -->
   </ul>
 </nav>
 
 <script>
-  // JavaScript to generate the navigation from the headings
+  // JavaScript to generate the navigation from the h2 headings
   document.addEventListener('DOMContentLoaded', function () {
     var navList = document.getElementById('nav-list');
-    var headings = document.querySelectorAll('article h2, article h3'); // Adjust the selector to target headings in article
+    var headings = document.querySelectorAll('article h2'); // Only select h2 elements
     headings.forEach(function (heading) {
       var listItem = document.createElement('li');
       listItem.className = 'nav-item';

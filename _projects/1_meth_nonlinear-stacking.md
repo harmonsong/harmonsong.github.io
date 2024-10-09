@@ -14,7 +14,8 @@ cited_keys:
     - fjwang
     - leakingLi
 ---
-+ This work has been presented as a highlighted poster in the AGU 2023. <a href="{{ site.baseurl }}/assets/pdf/AGU2023.pdf" target="_blank" rel="noopener noreferrer">Download Poster PDF</a>
++ This work has been presented as a highlighted poster in the AGU 2023. 
+    <a href="{{ site.baseurl }}/assets/pdf/AGU2023.pdf" target="_blank" rel="noopener noreferrer">Download Poster PDF</a>
 
 ## Abstract
 

@@ -17,10 +17,10 @@ cited_keys:
 ## Abstract
 In our previous methodological work, we proposed the <a href="{{ site.baseurl }}/projects/2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to address the bifurcation issues commonly encountered when imaging complex subsurface structures. In this study, we applied the <a href="{{ site.baseurl }}/projects/2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to image a trifurcated fault system in the San Jacinto Fault Zone, refining its Vs structure. The imaging results exhibit high resolution, revealing two buried low-velocity channels, a trapping structure, an inferred fault, and the reverse-wrench mechanism associated with the trifurcation faults. Given the enhanced detail and resolution provided by this method, we believe it is well-suited for delicate subsurface tomography.
 
-### Geological setting
+## Geological setting
 In this study, ambient noise data recorded by a dense Nodal array around the Clark branch of the SJFZ at the Sagebrush Flats (SGB) was used for tomography. The array had an average 10m row interstation and 30m row separation {% cite sgb %}. {% cite wade2018 %} analyzed the lithology and surface fault traces at the SGB site Based on the V_s  properties {% cite mordret2019 %} and surface geological mapping results, as depicted in Figure 1(a) (edit from {% cite share2020 %}). Three exposed faults (F102, F104, F106) traverse the array from northwest to southeast, forming the trifurcated fault zone, while another inferred but not field-observed fault (F105) lies to the northeast.
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-7 mt-md-0">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/geo.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -34,8 +34,8 @@ The workflow of integrating <a href="{{ site.baseurl }}/projects/2_meth_partitio
 + Secondly, the F-J transform is performed to obtain the dispersion spectrogram for each subarray. 
 + Thirdly, multimodal dispersion curves are picked and examined, and the 1D $$v_s$$ structures are obtained by the BFGS method of each subarray. 
 + Finally, all 1D $$v_s$$ structures are merged to construct the 3D $$v_s$$ model using Kriging interpolation.
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-5 mt-md-0">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/work2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -51,7 +51,7 @@ The workflow of integrating <a href="{{ site.baseurl }}/projects/2_meth_partitio
     <strong>Figure 3.</strong> Workflow to retrieve the 3D Vs model from ambient noise data. (a) The distribution of the targets’ centroid and the generated subarrays’ centroid by the partition similarity test. The blue hollow circles represent the centroid of all targets, and the green stars represent the centroid of generated subarrays. The letter S refers to the sample subarray enveloped by the red lines, and the red stars represent the centroid location of this subarray. (b) The frequency domain CCFs of S. (c) The F-J spectrogram calculated from CCFs of S. (d) The dispersion curves picked from the F-J spectrogram. (e) 1D Vs model from the inversion of multimodal dispersion curves with the Broyden-Fletcher-Goldfarb-Shanno method. (f) A depth slice at 100m of the final 3D Vs model by merging 1D Vs models at all reference locations.
 </div>
 
-## Results:
+## Results
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/phase.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -83,10 +83,16 @@ The workflow of integrating <a href="{{ site.baseurl }}/projects/2_meth_partitio
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/vs4.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    <strong>Figure 7.</strong> The vertical slices of (a) Vs model and (b) Vs perturbation within the fault trifurcation area (referenced in Figure 1(b) from Row 8 to Row 12). The vertical black dash lines and gray solid lines in each plot represent the fault traces estimated by USGS Dor et al. (2006) and Wade (2018), respectively. Three velocity contours are typically marked in (a) and (c) as different filling lines to visualize the variations better. The black solid lines indicate the reverse fault mechanism.
+</div>
+
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/vs5.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    <strong>Figure 7.</strong> The vertical slices of (a) Vs model and (b) Vs perturbation inside the fault trifurcation area and (a) Vs model and (b) Vs perturbation outside the fault trifurcation area (referenced in Figure 1(b) from Row 8 to Row 17). The vertical black dash lines and gray solid lines in each plot represent the fault traces estimated by USGS Dor et al. (2006) and Wade (2018), respectively. Three velocity contours are typically marked in (a) and (c) as different filling lines to visualize the variations better. The black solid lines indicate the reverse fault mechanism.
+   <strong>Figure 8.</strong> The vertical slices of (a) Vs model and (b) Vs perturbation within the fault trifurcation area (referenced in Figure 1(b) from Row 12 to Row 17). The vertical black dash lines and gray solid lines in each plot represent the fault traces estimated by USGS Dor et al. (2006) and Wade (2018), respectively. Three velocity contours are typically marked in (a) and (c) as different filling lines to visualize the variations better. The black solid lines indicate the reverse fault mechanism.
 </div>

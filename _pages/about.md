@@ -1,25 +1,27 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: M.S (Expected 2025) <a href='https://ess.sustech.edu.cn/'>@ Department of Earth and Space Sciences</a>. , Southern University of Science and Technology (SUSTech)
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: about/prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>E3138, College of Science</p>
+    <p>1088 Xueyuan Avenue</p>
+    <p>Shenzhen, Guangdong 518055</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: False # includes a list of news items
+selected_papers: False # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome! 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I’m Shuhao SONG (宋舒昊), a graduate student specializing in Geophysics at the Southern University of Science and Technology, currently preparing for Ph.D. applications. I have a strong interest and aptitude for applying mathematics, physics, and computer science to solve real-world problems. My current research focuses on advancing multimodal ambient noise surface wave tomography to image high-resolution, complex subsurface structures. I am also interested in exploring advanced techniques for imaging complex subsurface features, such as attenuation analysis, H/V spectral ratios, seismicity, and dv/v monitoring with dataset of dense arrays, Das, and geodetic data. Additionally, I want to integrate Artificial Intelligence to streamline geophysical data processing and minimize redundant manual tasks.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+During my academic journey under the guidance of <a href='https://www.sustech.edu.cn/en/faculties/chenxiaofei.html'>Dr. Xiaofei CHEN</a>, I have focused on enhancing the Frequency-Bessel Transform method (F-J method) for multimodal surface wave tomography, specifically by: (a) integrating non-linear cross-correlation stacking methods, and (b) developing a quantitative subarray selection strategy based on the similarity of dispersion curves. These techniques were applied to refine the Vs structure of the Sagebrush Flat Basin at the San Jacinto Fault Zone. Currently, I am working on a new cross-correlation evaluation strategy to enhance overtone surface wave tomography, aiming to boost the energy of the overtones.
+
+Beyond my research, I am passionate about both sports and education. I enjoy playing badminton (proficient) and volleyball (conversant), and have earned a series of championships in both sports. I also have experience tutoring high school students in physics and math, including preparation for the Gaokao in Mandarin and AP courses in English. This teaching experience has honed my communication skills and will be invaluable in future teaching assistant (TA) roles.

@@ -1,8 +1,8 @@
 ---
-layout: page
-pgtitle: Quantitative Partition for Array-based Surface Wave Tomography
+layout: page_nav
+pgtitle: A Quantitative Partition for Array-based Surface Wave Tomography
 title: A quantitative subarray selection strategy for array-based surface wave tomography -- partition similarity test (PST)
-description: Geophysics-Seiemology
+description: Geophysics:Seiemology
 img: assets/img/research/2/cover_dispersion.png
 importance: 2
 category: Methodology
@@ -73,3 +73,6 @@ Here, we demonstrate the effectiveness of the FJ-PST by comparing it to the disp
 <div class="caption">
     <strong>Figure 3.</strong> The comparison between FJ-PST and the traditional F-J for 5 different subarrays. (a) The subarrays of FJ-PST (blue) and the nearest subarrays of traditional F-J (green). (b) The dispersion spectrogram calculated by the F-J for the green subarrays in (a). The red dashed squares indicate the fundamental mode bifurcation. (c) The dispersion spectrogram calculated by the F-J for the blue subarrays in (a).
 </div>
+
+## Application: High-resolution Fault-Zone Tomography
++ <strong>Related Project: <a href="{{ site.baseurl }}/projects/4_app_tomo-SGB/" target="_blank" rel="noopener noreferrer">Complex Fault Tomography Using FJ-PST (San Jacinto Fault Zone)</a>

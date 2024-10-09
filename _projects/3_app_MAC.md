@@ -1,17 +1,16 @@
 ---
-layout: page
-pgtitle: Effects of Non-linear CCFs stacking on the F-J method
+layout: page_nav
+pgtitle: Fault Tomography Using FJ-PST
 title: The effects of nonlinear cross-correlation function stacking methods on F-J dispersion curve extraction
-description: Geophysics-Fluid Dynamic of Core-Mantle Boundary
+description: Geophysics:Fluid Dynamic of Core-Mantle Boundary
 img: assets/img/12.jpg
 importance: 1
 category: Application
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Abstract
+Dense seismometer arrays offer new opportunities for exploring delicate near-surface near-fault structures. By integrating regional dense seismic array data, seismologists' understanding of fault systems has rapidly improved in the past decade. However, obtaining a high-resolution shear wave velocity structure is still challenging, especially for complex near-fault systems. In this work, we apply the recently developed array-based multimodal surface wave tomography method (the frequency-Bessel transform method, abbreviated as the F-J method) to image complex subsurface systems. This method provides dispersion curves with a broader frequency band, enhanced resolution, and overtone extraction. However, limited by the subarray selection for three-dimensional imaging, integrating the F-J method into complex structures needs a more reliable workflow. We propose the "partition similarity test" method (FJ-PST) to adaptively and quantitatively find suitable subarrays to address the partition challenge adaptively by testing larger subarrays with smaller ones based on the dispersion similarity. 
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 

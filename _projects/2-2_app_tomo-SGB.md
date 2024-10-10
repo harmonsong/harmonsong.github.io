@@ -1,7 +1,7 @@
 ---
 layout: page_nav
 pgtitle: Complex Fault Tomography Using FJ-PST (San Jacinto Fault Zone)
-title: Refine Shallow $$v_s$$ Model of Complex Subsurface Structures by F-J Multimodal Tomography with Partition Similarity Test-- A Case Study at San Jacinto Fault Zone
+title: Refine Shallow Vs Model of Complex Subsurface Structures by F-J Multimodal Tomography with Partition Similarity Test-- A Case Study at San Jacinto Fault Zone
 description: Geophysics:Seiemology
 img: assets/img/research/4/cover.png
 importance: 1

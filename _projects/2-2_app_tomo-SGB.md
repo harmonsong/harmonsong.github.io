@@ -15,10 +15,10 @@ cited_keys:
 ---
 
 ## Abstract
-In our previous methodological work, we proposed the <a href="{{ site.baseurl }}/projects/2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to address the bifurcation issues commonly encountered when imaging complex subsurface structures. In this study, we applied the <a href="{{ site.baseurl }}/projects/2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to image a trifurcated fault system in the San Jacinto Fault Zone, refining its Vs structure. The imaging results exhibit high resolution, revealing two buried low-velocity channels, a trapping structure, an inferred fault, and the reverse-wrench mechanism associated with the trifurcation faults. Given the enhanced detail and resolution provided by this method, we believe it is well-suited for delicate subsurface tomography.
+In our previous methodological work, we proposed the <a href="{{ site.baseurl }}/projects/1-2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to address the bifurcation issues commonly encountered when imaging complex subsurface structures. In this study, we applied the <a href="{{ site.baseurl }}/projects/1-2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to image a trifurcated fault system in the San Jacinto Fault Zone, refining its $$v_s$$ structure. The imaging results exhibit high resolution, revealing two buried low-velocity channels, a trapping structure, an inferred fault, and the reverse-wrench mechanism associated with the trifurcation faults. Given the enhanced detail and resolution provided by this method, we believe it is well-suited for delicate subsurface tomography.
 
-## Geological setting
-In this study, ambient noise data recorded by a dense Nodal array around the Clark branch of the SJFZ at the Sagebrush Flats (SGB) was used for tomography. The array had an average 10m row interstation and 30m row separation {% cite sgb %}. {% cite wade2018 %} analyzed the lithology and surface fault traces at the SGB site Based on the V_s  properties {% cite mordret2019 %} and surface geological mapping results, as depicted in Figure 1(a) (edit from {% cite share2020 %}). Three exposed faults (F102, F104, F106) traverse the array from northwest to southeast, forming the trifurcated fault zone, while another inferred but not field-observed fault (F105) lies to the northeast.
+## Geological Setting
+In this study, ambient noise data recorded by a dense Nodal array around the Clark branch of the SJFZ at the Sagebrush Flats (SGB) was used for tomography. The array had an average 10m row interstation and 30m row separation {% cite sgb %}. {% cite wade2018 %} analyzed the lithology and surface fault traces at the SGB site Based on the $$v_s$$ properties {% cite mordret2019 %} and surface geological mapping results, as depicted in Figure 1(a) (edit from {% cite share2020 %}). Three exposed faults (F102, F104, F106) traverse the array from northwest to southeast, forming the trifurcated fault zone, while another inferred but not field-observed fault (F105) lies to the northeast.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/research/4/geo.png" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -29,7 +29,7 @@ In this study, ambient noise data recorded by a dense Nodal array around the Cla
 </div>
 
 ## Workflow of the FJ-PST
-The workflow of integrating <a href="{{ site.baseurl }}/projects/2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> to obtain a 3D $$v_s$$ model mainly consists of four steps (as shown in Figure 2 and Figure 3):
+The workflow of integrating <a href="{{ site.baseurl }}/projects/1-2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> to obtain a 3D $$v_s$$ model mainly consists of four steps (as shown in Figure 2 and Figure 3):
 + Firstly, subarrays are adaptively generated based on the aimed frequency band from the partition similarity test. 
 + Secondly, the F-J transform is performed to obtain the dispersion spectrogram for each subarray. 
 + Thirdly, multimodal dispersion curves are picked and examined, and the 1D $$v_s$$ structures are obtained by the BFGS method of each subarray. 

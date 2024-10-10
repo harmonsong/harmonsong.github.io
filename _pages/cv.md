@@ -4,7 +4,7 @@ permalink: /CV/
 title: CV
 nav: true
 nav_order: 10
-cv_pdf: cv_Shuhao-SONG.pdf
+cv_pdf: Shuhao_SONG_CV.pdf
 description: 
 toc:
   sidebar: left

@@ -14,6 +14,9 @@ cited_keys:
     - share2020
 ---
 
++ This work has been published to <a href="https://doi.org/10.1785/0220240465" target="_blank" rel="noopener noreferrer">Seismological Research Letters</a>. 
+[<a href="{{ site.baseurl }}/assets/pdf/srl-2024465.1.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>]
+
 ## Abstract
 In our previous methodological work, we proposed the <a href="{{ site.baseurl }}/projects/1-2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to address the bifurcation issues commonly encountered when imaging complex subsurface structures. In this study, we applied the <a href="{{ site.baseurl }}/projects/1-2_meth_partition/" target="_blank" rel="noopener noreferrer">FJ-PST</a> method to image the Sagebrush Flat (SGB) site along the Clark fault (CF) strand of the San Jacinto fault zone, refining its $$v_s$$ structure. The imaging results exhibit high resolution, revealing two buried low-velocity channels, a trapping structure, an inferred fault, and notable lateral velocity variations along CF branches. Given the enhanced detail and resolution provided by this method, we believe it is well-suited for complex subsurface tomography.
 

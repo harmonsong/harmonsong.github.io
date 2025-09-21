@@ -14,6 +14,9 @@ cited_keys:
     - synLi
 ---
 
++ This work has been published to <a href="https://doi.org/10.1785/0220240465" target="_blank" rel="noopener noreferrer">Seismological Research Letters</a>. 
+[<a href="{{ site.baseurl }}/assets/pdf/srl-2024465.1.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>]
+
 ## Abstract
 Dense seismometer arrays offer new opportunities for exploring delicate near-surface near-fault structures. By integrating regional dense seismic array data, seismologists' understanding of fault systems has rapidly improved in the past decade. However, obtaining a high-resolution shear wave velocity structure is still challenging, especially for complex near-fault systems. In this work, we apply the recently developed array-based multimodal surface wave tomography method (the frequency-Bessel transform method, abbreviated as the F-J method) {% cite fjwang %} to image complex subsurface systems. This method provides dispersion curves with a broader frequency band, enhanced resolution, and overtone extraction. However, limited by the subarray selection for three-dimensional imaging, integrating the F-J method into complex structures needs a more reliable workflow. We propose the "partition similarity test" method (FJ-PST) to adaptively and quantitatively find suitable subarrays to address the partition challenge adaptively by testing larger subarrays with smaller ones based on the dispersion similarity. 
 

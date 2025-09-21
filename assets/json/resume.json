@@ -4,9 +4,8 @@
     "label": "Seismologist",
     "image": "",
     "email": "shuhao.song@yale.edu",
-    "phone": "(86) 132-0229-7735",
+    "phone": "(+1) 4754340952 ",
     "url": "https://harmonsong.github.io/",
-    "summary": "Currently a master studnet in SUSTech. PhD @Yale 2025 Fall",
     "location": {
       "address": "1088 Xueyuan blvd.",
       "postalCode": "518055",
@@ -24,6 +23,20 @@
   },
   "education": [
     {
+      "institution": "Yale University",
+      "location": "New Haven, USA",
+      "url": "https://www.yale.edu/",
+      "area": "Geophysics and Geology",
+      "studyType": "Ph.D.",
+      "startDate": "2025.8",
+      "endDate": "-",
+      "score": "11",
+      "advisor": "Jeffrey Park",
+      "advisor_url": "https://earth.yale.edu/profile/jeffrey-park",
+      "research_direction": "Seismic tomography",
+      "school_logo": "/assets/img/cv/yale.jpg"
+    },
+    {
       "institution": "Southern University of Science and Technology",
       "location": "Shenzhen, China",
       "url": "https://www.sustech.edu.cn/en/",
@@ -40,7 +53,7 @@
     },
     {
       "institution": "University of California, Berkeley",
-      "location": "California, USA",
+      "location": "Berkeley, USA",
       "url": "https://www.berkeley.edu/",
       "area": "Geophysics",
       "studyType": "Visiting Student",
@@ -130,7 +143,7 @@
     {
       "id": 1,
       "type": "Publication",
-      "name": "Shuhao Song, Zhengbo Li, Juqing Chen, Fengjiang Ju, Chunquan Yu, and Xiaofei Chen. Refine Shallow Vs Model of Complex Subsurface Structures by F-J Multimodal Tomography with Partition Similarity Test: A Case Study at San Jacinto Fault Zone. (Submitted to Seismological Research Letters, under review)"
+      "name": "Song, S., Z. Li, J. Chen, F. Ju, C. Yu, and X. Chen (2025). Imaging Shallow Complex Vs Structure Using F–J Surface-Wave Tomography with Partition Similarity Test: A Case Study at the San Jacinto Fault Zone, Seismol. Res. Lett. XX,1–15, doi: 10.1785/0220240465."
     },
     {
       "id": 2,

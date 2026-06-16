@@ -32,10 +32,25 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Sandstone theme colors
+$sandstone-bg-light: #faf8f5;
+$sandstone-text-light: #2d2a26;
+$sandstone-text-light-secondary: #8a7e6e;
+$sandstone-accent-light: #8b6914;
+$sandstone-card-light: #f5f0e8;
+$sandstone-divider-light: #e5dac8;
+
+$sandstone-bg-dark: #1e1c18;
+$sandstone-text-dark: #e8e0d4;
+$sandstone-text-dark-secondary: #9a8e7e;
+$sandstone-accent-dark: #d4a853;
+$sandstone-card-dark: #2a2720;
+$sandstone-divider-dark: #3d3830;
+
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color-light: rgba($sandstone-accent-light, 0.08);
+$code-bg-color-dark: #2a2720 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

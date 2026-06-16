@@ -8,14 +8,13 @@ middle_name:
 last_name: Song
 email: shuhao.song@yale.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Shuhao Song's academic homepage. PhD student in Geophysics at Yale University, specializing in seismic tomography and surface wave methods.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: seismic tomography, surface wave, geophysics, ambient noise, F-J method, Yale University # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🌍 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://harmonsong.github.io/ # the base hostname & protocol for your site
 baseurl: ""
@@ -63,8 +62,8 @@ max_width: 1200px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -90,13 +89,13 @@ lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 linkedin_username: # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
-orcid_id: # your ORCID ID
+orcid_id: 0009-0006-2319-5594 # your ORCID ID
 osf_id: # your OSF ID
 pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: # your Google Scholar ID
+scholar_userid: tRzPoVcAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -312,8 +311,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Song]
+  first_name: [Shuhao, S.]
 
   style: apa
   locale: en
@@ -490,7 +489,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
   highlightjs:
     integrity:
       css:
@@ -638,7 +637,6 @@ jekyll_get_json:
 jsonresume:
   - basics
   - education
-  - courses
   - pub
   - awards
   - skills

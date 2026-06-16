@@ -2,8 +2,18 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
+  <header class="post-header hero-section">
+    <!-- Seismic wave background -->
+    <div class="seismic-bg" aria-hidden="true">
+      <svg viewBox="0 0 1200 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave wave-1" d="M0,100 Q150,60 300,100 T600,100 T900,100 T1200,100" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path class="wave wave-2" d="M0,120 Q150,80 300,120 T600,120 T900,120 T1200,120" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        <path class="wave wave-3" d="M0,80 Q150,120 300,80 T600,80 T900,80 T1200,80" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <path class="wave wave-4" d="M0,140 Q150,100 300,140 T600,140 T900,140 T1200,140" fill="none" stroke="currentColor" stroke-width="0.5"/>
+        <path class="wave wave-5" d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60" fill="none" stroke="currentColor" stroke-width="0.4"/>
+      </svg>
+    </div>
+    <h1 class="post-title hero-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
@@ -11,7 +21,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc hero-subtitle">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -43,7 +53,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -59,7 +69,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

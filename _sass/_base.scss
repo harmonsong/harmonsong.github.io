@@ -4,6 +4,31 @@
 
 // Typography
 
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+code, pre, .monospace {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
 p,
 h1,
 h2,
@@ -38,14 +63,27 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
 
   &:hover {
     color: var(--global-theme-color);
-    text-decoration: underline;
+    text-decoration: none;
   }
+}
 
-  &:hover:after :not(.nav-item.dropdown) {
-    width: 100%;
+// Animated underline for content links (not nav, not buttons)
+.post a:not(.btn):not(.nav-link):not(.card-link),
+article a:not(.btn):not(.nav-link) {
+  background-image: linear-gradient(var(--global-theme-color), var(--global-theme-color));
+  background-size: 0% 2px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+
+  &:hover {
+    background-size: 100% 2px;
   }
 }
 
@@ -285,13 +323,31 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: 'DM Serif Display', serif;
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: var(--global-theme-color);
+      transition: width 0.3s ease;
+    }
 
     &:hover {
       color: var(--global-hover-color);
+
+      &::after {
+        width: 100%;
+      }
     }
   }
 
@@ -299,6 +355,10 @@ ul.task-list input[type="checkbox"] {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);
+
+    &::after {
+      width: 100%;
+    }
 
     &:hover {
       color: var(--global-hover-color);
@@ -641,6 +701,14 @@ footer.sticky-bottom {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 3px solid transparent;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border-left-color: var(--global-theme-color);
+    }
 
     img {
       width: auto;       /* Width adjusts automatically */
@@ -1339,5 +1407,127 @@ ninja-keys::part(ninja-input-wrapper) {
   .nav {
       padding-left: 0; // 取消左侧的 padding
       padding-right: 0; // 取消右侧的 padding
+  }
+}
+
+// ============================================================
+// Scroll-in Animations
+// ============================================================
+
+.scroll-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// CV timeline stagger
+.cv .card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ============================================================
+// Hero Animations
+// ============================================================
+
+.hero-title {
+  .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: charReveal 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @for $i from 1 through 20 {
+    .char:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.04}s;
+    }
+  }
+}
+
+@keyframes charReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Seismic wave background
+.seismic-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.06;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.post-header {
+  position: relative;
+}
+
+// Page fade-in
+.page-content {
+  animation: pageFadeIn 0.3s ease-in;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .scroll-in,
+  .cv .card,
+  .hero-title .char,
+  .hero-subtitle,
+  .page-content {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .seismic-bg {
+    display: none;
   }
 }

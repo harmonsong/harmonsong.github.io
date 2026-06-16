@@ -2,94 +2,109 @@
   type: map
   contents:
     - name: Full Name
-      value: Shuhao SONG
+      value: Shuhao SONG (宋舒昊)
     - name: Date of Birth
       value: 10th December 1999
     - name: Languages
-      value: Mandarin, English
+      value: Mandarin (Native), English (C1, IELTS 7.5)
 
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in Geophysics
+      institution: Yale University, New Haven, CT, USA
+      year: 2025 - Present
+      description:
+        - Department of Earth & Planetary Sciences
+
     - title: M.S. in Geophysics
-      institution: Southern University of Science and Technology
-      year: 2022-2025
-      Advisor: 
-      descriptions:  # 修改为 unique key
-        - Advisor
-        - Description 2.
-          
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+      institution: Southern University of Science and Technology (SUSTech), Shenzhen, China
+      year: 2022 - 2025
       description:
-        - Description 1.
-        - Description 2.
+        - "Advisor: Prof. Xiaofei CHEN"
+        - "GPA: 3.85 / 4.0"
 
-- title: Experience
+    - title: Visiting Student (BISP Program)
+      institution: University of California, Berkeley (UCB), California, USA
+      year: 2021 - 2022
+      description:
+        - "Specialized GPA: 4.0 / 4.0"
+
+    - title: B.S. in Geophysics
+      institution: Southern University of Science and Technology (SUSTech), Shenzhen, China
+      year: 2018 - 2022
+      description:
+        - "GPA: 3.83 / 4.0 (Rank: 1/12)"
+
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Enhancing the Applicability of the F-J Method for Fault Zone Subsurface Tomography
+      institution: Individual Project under the supervision of Prof. Xiaofei CHEN
+      year: 2023 - 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed an innovative partitioning strategy to improve surface wave tomography (SWT) for complex subsurface structures.
+        - Proposed a dispersion similarity-based partitioning strategy to resolve bifurcation without increasing manual workload.
+        - Achieved high-resolution imaging of the surveyed fault system's subsurface structure using the modified F-J method.
+
+    - title: Exploration of Non-linear Cross-correlation Stacking Methods for the F-J Method
+      institution: Individual Project under Prof. Xiaofei CHEN and Dr. Zhengbo LI
+      year: 2021 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Investigated the impact of various non-linear cross-correlation stacking methods on F-J surface wave tomography.
+        - Incorporated stacking methods into a Python package for the F-J method.
+        - Applied the methods to USArray data, finding FPS significantly improves dispersion curve quality.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Numerical Simulation of Fluid Waves in Earth's Outer Core
+      institution: Undergraduate Research Project under Prof. Yufeng LIN
+      year: 2020 - 2022
       description:
+        - Simulated Magnetic-Archimedes-Coriolis (MAC) waves to model fluid dynamics in Earth's outer core.
+        - Developed Matlab code for numerical solutions and performed simulations on a supercomputer.
+        - Identified similar patterns in eigenmodes by comparing simulation results with satellite geomagnetic data (CHAOS-7).
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: AP Physics Tutor
+      institution: Tutored a native American high school student in AP Physics (in English)
+      year: 2024 - Present
+
+    - title: Mathematics Tutor
+      institution: Tutored a high school senior in mathematics for college entrance exam (in Mandarin)
+      year: 2022 - 2023
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Summa Cum Laude at the College of Science (Top 10 Graduates)
+        - Excellent Graduate for exceptional performance at SUSTech
+        - Excellent Graduate at the Department of Earth and Space Sciences
+        - Excellent Graduation Thesis for undergraduate students
+    - year: 2021
       items:
-        - Max Planck Medal
+        - Second Class Merit Student Scholarship for exceptional performance
+        - Second Group Prize at the "Innovation Cup" National Geophysical Knowledge Competition
+        - Personal Best at the "Innovation Cup" National Geophysical Knowledge Competition
+        - Men's Doubles and Singles Champion in the School of Science Badminton Tournament
+    - year: 2020
+      items:
+        - Team Champion of the Volleyball Event at the School Sports Festival
 
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Matlab, Python, R, Java, C++
+    - title: Technical Software
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - SAC, GMT, Surfer, Origin
+    - title: Document & Presentation
+      items:
+        - Office, Adobe, Overleaf
+    - title: Sports
+      items:
+        - Badminton (Proficient), Volleyball (Conversant)

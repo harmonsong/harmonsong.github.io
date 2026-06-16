@@ -4,22 +4,16 @@
     "label": "Seismologist",
     "image": "",
     "email": "shuhao.song@yale.edu",
-    "phone": "(+1) 4754340952 ",
+    "phone": "",
     "url": "https://harmonsong.github.io/",
     "location": {
-      "address": "1088 Xueyuan blvd.",
-      "postalCode": "518055",
-      "city": "Shenzhen",
-      "countryCode": "R.P.China",
-      "region": "Guangdong"
+      "address": "208 Kline Geology Laboratory, 210 Whitney Ave",
+      "postalCode": "06511",
+      "city": "New Haven",
+      "countryCode": "US",
+      "region": "CT"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "profiles": []
   },
   "education": [
     {
@@ -33,7 +27,7 @@
       "score": "11",
       "advisor": "Jeffrey Park",
       "advisor_url": "https://earth.yale.edu/profile/jeffrey-park",
-      "research_direction": "Seismic tomography",
+      "research_direction": "Normal-mode Seismology",
       "school_logo": "/assets/img/cv/yale.jpg"
     },
     {
@@ -143,7 +137,8 @@
     {
       "id": 1,
       "type": "Publication",
-      "name": "Song, S., Z. Li, J. Chen, F. Ju, C. Yu, and X. Chen (2025). Imaging Shallow Complex Vs Structure Using F–J Surface-Wave Tomography with Partition Similarity Test: A Case Study at the San Jacinto Fault Zone, Seismol. Res. Lett. XX,1–15, doi: 10.1785/0220240465."
+      "name": "Shuhao Song, Zhengbo Li, Juqing Chen, Fengjiang Ju, Chunquan Yu, Xiaofei Chen; Imaging Shallow Complex Vs Structure Using F–J Surface‐Wave Tomography with Partition Similarity Test: A Case Study at the San Jacinto Fault Zone. Seismological Research Letters 2025; 97 (2A): 1089–1103. doi: https://doi.org/10.1785/0220240465.",
+      "url": "https://doi.org/10.1785/0220240465"
     },
     {
       "id": 2,
@@ -201,7 +196,7 @@
   "skills": [
     {
       "category": "Programming Languages",
-      "details": "Matlab, Python, Java, C++"
+      "details": "Matlab, Python, R, Java, C++"
     },
     {
       "category": "Language Proficiency",
@@ -220,16 +215,5 @@
       "details": "Badminton (Proficient), Volleyball (Conversant)"
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ]
+  "references": []
 }

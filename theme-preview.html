@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Preview - Shuhao Song</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; padding: 40px 20px; }
+h1 { text-align: center; margin-bottom: 10px; font-size: 28px; }
+.subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+.themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+.theme-card { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+.theme-label { padding: 16px 24px; background: #fff; border-bottom: 1px solid #eee; }
+.theme-label h2 { font-size: 18px; margin-bottom: 4px; }
+.theme-label p { font-size: 13px; color: #666; }
+.theme-preview { padding: 30px; min-height: 320px; }
+.theme-preview .nav { display: flex; gap: 20px; margin-bottom: 24px; font-size: 14px; font-weight: 500; }
+.theme-preview .nav span:first-child { font-weight: 700; font-size: 16px; }
+.theme-preview .hero { display: flex; gap: 24px; align-items: flex-start; }
+.theme-preview .avatar { width: 80px; height: 80px; border-radius: 8px; flex-shrink: 0; }
+.theme-preview .bio h3 { font-size: 20px; margin-bottom: 4px; }
+.theme-preview .bio .role { font-size: 13px; margin-bottom: 12px; }
+.theme-preview .bio .text { font-size: 12px; line-height: 1.6; opacity: 0.8; }
+.theme-preview .cards { display: flex; gap: 12px; margin-top: 20px; }
+.theme-preview .card { flex: 1; padding: 14px; border-radius: 8px; font-size: 11px; }
+.theme-preview .card .card-title { font-weight: 600; margin-bottom: 4px; font-size: 12px; }
+.theme-preview .footer-bar { margin-top: 20px; padding-top: 12px; font-size: 11px; opacity: 0.6; }
+
+/* Theme 1: Deep Ocean */
+.ocean .theme-preview { background: #ffffff; color: #1a2332; }
+.ocean .theme-preview .nav span { color: #1a2332; }
+.ocean .theme-preview .nav .accent { color: #0f5f8a; }
+.ocean .theme-preview .avatar { background: linear-gradient(135deg, #0f5f8a, #1a8bb3); }
+.ocean .theme-preview .bio .role { color: #0f5f8a; }
+.ocean .theme-preview .card { background: #f0f7fb; border: 1px solid #d4e8f2; }
+.ocean .theme-preview .footer-bar { border-top: 1px solid #e0e0e0; color: #666; }
+
+.ocean-dark .theme-preview { background: #0d1b2a; color: #e0e8f0; }
+.ocean-dark .theme-preview .nav span { color: #e0e8f0; }
+.ocean-dark .theme-preview .nav .accent { color: #4fc3f7; }
+.ocean-dark .theme-preview .avatar { background: linear-gradient(135deg, #1565c0, #4fc3f7); }
+.ocean-dark .theme-preview .bio .role { color: #4fc3f7; }
+.ocean-dark .theme-preview .card { background: #1a2d42; border: 1px solid #2a4060; }
+.ocean-dark .theme-preview .footer-bar { border-top: 1px solid #2a4060; color: #7a9ab5; }
+
+/* Theme 2: Sandstone */
+.sandstone .theme-preview { background: #faf8f5; color: #2d2a26; }
+.sandstone .theme-preview .nav span { color: #2d2a26; }
+.sandstone .theme-preview .nav .accent { color: #8b6914; }
+.sandstone .theme-preview .avatar { background: linear-gradient(135deg, #8b6914, #c4963a); }
+.sandstone .theme-preview .bio .role { color: #8b6914; }
+.sandstone .theme-preview .card { background: #f5f0e8; border: 1px solid #e5dac8; }
+.sandstone .theme-preview .footer-bar { border-top: 1px solid #e0d8c8; color: #8a7e6e; }
+
+.sandstone-dark .theme-preview { background: #1e1c18; color: #e8e0d4; }
+.sandstone-dark .theme-preview .nav span { color: #e8e0d4; }
+.sandstone-dark .theme-preview .nav .accent { color: #d4a853; }
+.sandstone-dark .theme-preview .avatar { background: linear-gradient(135deg, #8b6914, #d4a853); }
+.sandstone-dark .theme-preview .bio .role { color: #d4a853; }
+.sandstone-dark .theme-preview .card { background: #2a2720; border: 1px solid #3d3830; }
+.sandstone-dark .theme-preview .footer-bar { border-top: 1px solid #3d3830; color: #9a8e7e; }
+
+/* Theme 3: Forest */
+.forest .theme-preview { background: #ffffff; color: #1a2e1a; }
+.forest .theme-preview .nav span { color: #1a2e1a; }
+.forest .theme-preview .nav .accent { color: #2e7d4f; }
+.forest .theme-preview .avatar { background: linear-gradient(135deg, #2e7d4f, #4caf50); }
+.forest .theme-preview .bio .role { color: #2e7d4f; }
+.forest .theme-preview .card { background: #f2f8f4; border: 1px solid #d4e8d8; }
+.forest .theme-preview .footer-bar { border-top: 1px solid #e0e0e0; color: #666; }
+
+.forest-dark .theme-preview { background: #0f1a14; color: #d4e8d8; }
+.forest-dark .theme-preview .nav span { color: #d4e8d8; }
+.forest-dark .theme-preview .nav .accent { color: #66bb6a; }
+.forest-dark .theme-preview .avatar { background: linear-gradient(135deg, #2e7d4f, #66bb6a); }
+.forest-dark .theme-preview .bio .role { color: #66bb6a; }
+.forest-dark .theme-preview .card { background: #1a2e20; border: 1px solid #2a4a34; }
+.forest-dark .theme-preview .footer-bar { border-top: 1px solid #2a4a34; color: #7aaa84; }
+
+/* Theme 4: Slate Minimal */
+.slate .theme-preview { background: #ffffff; color: #1a1a2e; }
+.slate .theme-preview .nav span { color: #1a1a2e; }
+.slate .theme-preview .nav .accent { color: #4a4a6a; }
+.slate .theme-preview .avatar { background: linear-gradient(135deg, #4a4a6a, #7a7a9a); }
+.slate .theme-preview .bio .role { color: #4a4a6a; }
+.slate .theme-preview .card { background: #f5f5f8; border: 1px solid #e0e0e8; }
+.slate .theme-preview .footer-bar { border-top: 1px solid #e0e0e0; color: #888; }
+
+.slate-dark .theme-preview { background: #16161d; color: #d8d8e4; }
+.slate-dark .theme-preview .nav span { color: #d8d8e4; }
+.slate-dark .theme-preview .nav .accent { color: #a0a0c0; }
+.slate-dark .theme-preview .avatar { background: linear-gradient(135deg, #4a4a6a, #a0a0c0); }
+.slate-dark .theme-preview .bio .role { color: #a0a0c0; }
+.slate-dark .theme-preview .card { background: #20202a; border: 1px solid #2e2e3e; }
+.slate-dark .theme-preview .footer-bar { border-top: 1px solid #2e2e3e; color: #6a6a8a; }
+</style>
+</head>
+<body>
+
+<h1>Theme Preview</h1>
+<p class="subtitle">Each theme shows Light + Dark mode. Pick one that feels right.</p>
+
+<div class="themes">
+
+<!-- Theme 1: Deep Ocean -->
+<div class="theme-card ocean">
+  <div class="theme-label">
+    <h2>1. Deep Ocean (深海)</h2>
+    <p>Cool blues, inspired by ocean / seismic wave propagation. Calm and professional.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<div class="theme-card ocean-dark">
+  <div class="theme-label">
+    <h2>1. Deep Ocean - Dark Mode</h2>
+    <p>Deep navy background with bright cyan accents.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<!-- Theme 2: Sandstone -->
+<div class="theme-card sandstone">
+  <div class="theme-label">
+    <h2>2. Sandstone (砂岩)</h2>
+    <p>Warm earth tones, gold accent. Evokes geology fieldwork. Warm and grounded.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<div class="theme-card sandstone-dark">
+  <div class="theme-label">
+    <h2>2. Sandstone - Dark Mode</h2>
+    <p>Dark warm background with amber gold highlights.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<!-- Theme 3: Forest -->
+<div class="theme-card forest">
+  <div class="theme-label">
+    <h2>3. Forest (翠林)</h2>
+    <p>Natural greens, fresh and clean. Earth science meets nature. Lively yet academic.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<div class="theme-card forest-dark">
+  <div class="theme-label">
+    <h2>3. Forest - Dark Mode</h2>
+    <p>Deep forest background with fresh green accents.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<!-- Theme 4: Slate Minimal -->
+<div class="theme-card slate">
+  <div class="theme-label">
+    <h2>4. Slate (石板)</h2>
+    <p>Neutral grey-purple, understated and modern. Focus on content, no distraction.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+<div class="theme-card slate-dark">
+  <div class="theme-label">
+    <h2>4. Slate - Dark Mode</h2>
+    <p>Near-black with muted lavender accents. Ultra clean.</p>
+  </div>
+  <div class="theme-preview">
+    <div class="nav">
+      <span>Shuhao Song</span>
+      <span class="accent">Research</span>
+      <span>CV</span>
+      <span>Publications</span>
+    </div>
+    <div class="hero">
+      <div class="avatar"></div>
+      <div class="bio">
+        <h3>Shuhao Song</h3>
+        <div class="role">PhD Student @ Yale EPS</div>
+        <div class="text">Geophysics researcher focused on seismic tomography, surface wave methods, and AI-driven data processing.</div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-title">F-J Method</div>Surface wave tomography</div>
+      <div class="card"><div class="card-title">Dense Arrays</div>DAS & geodetic data</div>
+      <div class="card"><div class="card-title">AI Integration</div>Automated processing</div>
+    </div>
+    <div class="footer-bar">Yale University | New Haven, CT</div>
+  </div>
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 40px; color: #888; font-size: 13px;">
+  This is a preview file. Delete after choosing a theme.
+</div>
+
+</body>
+</html>
